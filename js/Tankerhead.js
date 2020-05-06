@@ -28,8 +28,9 @@ class TankerHead {
       }
       launchX = pos.x + ((this.height + 10) * cos(angle))
       launchY = pos.y - ((this.height - 10) * sin(angle))
-
-      
+ 
+      // launchX = pos.x + (this.height+10)*0.9; 
+       //launchY = pos.y - (this.height-10) * 0.1;
       if (keyIsDown(32)) {
           Matter.Body.setPosition(canonball.body, { x: launchX-88 , y: launchY-40 })
       }
